@@ -1,0 +1,27 @@
+[
+  {
+    "id": "exterior-surfaces",
+    "title": "Exterior surfaces",
+    "prompt": "Walk the perimeter and look for cracks, damage, or unusual wear."
+  },
+  {
+    "id": "entry-access",
+    "title": "Entry & access",
+    "prompt": "Check that doors, locks, steps, and access paths are secure and clear."
+  },
+  {
+    "id": "interior-condition",
+    "title": "Interior condition",
+    "prompt": "Inspect walls, ceilings, floors, and visible signs of moisture."
+  },
+  {
+    "id": "systems-utilities",
+    "title": "Systems & utilities",
+    "prompt": "Note the visible condition of electrical, plumbing, heating, and ventilation."
+  },
+  {
+    "id": "safety-closeout",
+    "title": "Safety & closeout",
+    "prompt": "Confirm safety equipment is present and record anything needing follow-up."
+  }
+]
