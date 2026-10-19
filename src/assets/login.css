@@ -1,28 +1,149 @@
-.profile-area { position: relative; width: 100%; }
-.profile-trigger { display: flex; align-items: center; gap: 10px; width: 100%; padding: 0; border: 0; background: transparent; color: inherit; text-align: left; }
-.profile-trigger:hover .profile-copy strong { color: white; }
-.avatar { flex-shrink: 0; }
-.profile-copy { min-width: 0; }
-.profile-copy strong, .profile-copy small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.profile-copy strong { font-size: 12px; }
-.profile-copy small { color: #92ada0; margin-top: 3px; }
-.profile-chevron { margin-left: auto; color: #a1b9ae; font-size: 16px; }
-.profile-menu { position: absolute; right: 0; bottom: calc(100% + 10px); width: 190px; padding: 13px; border: 1px solid #34584d; border-radius: 5px; background: #21483e; box-shadow: 0 8px 22px rgba(10, 30, 25, .25); }
-.profile-label { display: block; color: #91b3a2; font-size: 9px; font-weight: 700; letter-spacing: 1.2px; margin-bottom: 7px; }
-.profile-menu > strong { display: block; color: white; font-size: 12px; margin-bottom: 12px; }
-.profile-menu button { width: 100%; padding: 8px 0; border: 0; border-top: 1px solid #34584d; background: transparent; color: #f1c0a0; text-align: left; font-size: 11px; }
-.login-form { width: 100%; max-width: 190px; margin: 0 auto; padding: 11px; border: 1px solid #34584d; border-radius: 5px; box-sizing: border-box; background: #21483e; box-shadow: 0 8px 22px rgba(10, 30, 25, .25); }
-.username { display: block; width: 100%; min-width: 0; padding: 8px 9px; border: 1px solid #56766b; border-radius: 4px; box-sizing: border-box; background: #193b34; color: white; outline: none; font-size: 12px; }
-.username::placeholder { color: #91a99e; }
-.login-button { width: 100%; margin-top: 8px; padding: 8px; border: 0; border-radius: 4px; box-sizing: border-box; background: #e68447; color: white; font-size: 11px; font-weight: 700; }
-.login-trigger .avatar { background: #d8e9df; color: #226e52; }
+.profile-area {
+  position: relative;
+  width: 100%;
+}
+.profile-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+.profile-trigger:hover .profile-copy strong {
+  color: white;
+}
+.avatar {
+  flex-shrink: 0;
+}
+.profile-copy {
+  min-width: 0;
+}
+.profile-copy strong,
+.profile-copy small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.profile-copy strong {
+  font-size: 12px;
+}
+.profile-copy small {
+  color: #92ada0;
+  margin-top: 3px;
+}
+.profile-chevron {
+  margin-left: auto;
+  color: #a1b9ae;
+  font-size: 16px;
+}
+.profile-menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 10px);
+  width: 190px;
+  padding: 13px;
+  border: 1px solid #34584d;
+  border-radius: 5px;
+  background: #21483e;
+  box-shadow: 0 8px 22px rgba(10, 30, 25, 0.25);
+}
+.profile-label {
+  display: block;
+  color: #91b3a2;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 7px;
+}
+.profile-menu > strong {
+  display: block;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.profile-menu button {
+  width: 100%;
+  padding: 8px 0;
+  border: 0;
+  border-top: 1px solid #34584d;
+  background: transparent;
+  color: #f1c0a0;
+  text-align: left;
+  font-size: 11px;
+}
+.login-form {
+  width: 100%;
+  max-width: 190px;
+  margin: 0 auto;
+  padding: 11px;
+  border: 1px solid #34584d;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #21483e;
+  box-shadow: 0 8px 22px rgba(10, 30, 25, 0.25);
+}
+.username {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 8px 9px;
+  border: 1px solid #56766b;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #193b34;
+  color: white;
+  outline: none;
+  font-size: 12px;
+}
+.username::placeholder {
+  color: #91a99e;
+}
+.login-button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #e68447;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+}
+.login-trigger .avatar {
+  background: #d8e9df;
+  color: #226e52;
+}
 @media (max-width: 850px) {
-    .profile-copy, .profile-chevron { display: none; }
-    .profile-trigger { justify-content: center; }
-    .profile-menu, .login-form { left: 0; right: auto; width: 190px; }
+  .profile-copy,
+  .profile-chevron {
+    display: none;
+  }
+  .profile-trigger {
+    justify-content: center;
+  }
+  .profile-menu,
+  .login-form {
+    left: 0;
+    right: auto;
+    width: 190px;
+  }
 }
 @media (max-width: 650px) {
-    .profile-copy, .profile-chevron { display: inline; }
-    .profile-trigger { justify-content: flex-start; }
-    .profile-menu { left: auto; right: 0; }
+  .profile-copy,
+  .profile-chevron {
+    display: inline;
+  }
+  .profile-trigger {
+    justify-content: flex-start;
+  }
+  .profile-menu {
+    left: auto;
+    right: 0;
+  }
 }

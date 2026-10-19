@@ -36,44 +36,6 @@ function readDraft() {
 function App() {
   const [user, setUser] = useState(null);
 
-  const dummyRow = {
-    propertyId: "12345",
-    streetAddress: "18 Hawthorn Lane",
-    city: "Merriam",
-    state: "KS",
-    zip: "66203",
-    county: "Johnson",
-    country: "USA",
-    latitude: 38.9647,
-    longitude: -94.6708,
-    parcel_id: "123456789",
-    property_type: "Single Family Residential",
-    year_built: 1995,
-    square_feet: 2200,
-    lot_size: 0.25,
-    bedrooms: 4,
-    bathrooms: 3,
-    stories:2,
-    garage_type: "Attached",
-    garage_size: 2,
-    owner_name: "John Doe",
-    owner_contact: "(555) 123-4567",
-    owner_email: "johndoe@example.com",
-    last_sale_date: "2022-05-15",
-    last_sale_price: 350000,
-    assessed_value: 300000,
-    tax_rate: 1.25,
-    zoning: "Residential",
-    flood_zone: "No",
-    school_district: "Merriam School District",
-    neighborhood: "Hawthorn Estates",
-    hoa_fee: 150,
-    hoa_contact: "(555) 987-6543",
-    inspection_date: "2024-06-01",
-    inspector_name: "Alex Kim",
-    report_status: "Not Started"
-  };
-
   const savedDraft = readDraft();
   const [items, setItems] = useState(savedDraft?.items || initialItems);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -81,8 +43,8 @@ function App() {
   const [speechError, setSpeechError] = useState("");
   const [report, setReport] = useState(false);
   const [chunkIndex, setChunkIndex] = useState(0);
-  const [property, setProperty] = useState(savedDraft?.property || "18 Hawthorn Lane");
-  const [zipCode, setZipCode] = useState(savedDraft?.zipCode || "66203");
+  const [property, setProperty] = useState(savedDraft?.property || "N/A");
+  const [zipCode, setZipCode] = useState(savedDraft?.zipCode || "N/A");
   const [showHistory, setShowHistory] = useState(false);
   const recognitionRef = useRef(null);
   const listenIntentRef = useRef(false);
